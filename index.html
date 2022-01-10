@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Home - Tsis Jeans</title>
+
+	<!--Bootstrap-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+		integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+	<!--Estilo Customizado-->
+	<link rel="stylesheet" type="text/css" href="estilo/estilo.css">
+
+	<link rel="icon" href="imagens/logo1.jpeg">
+</head>
+
+<body onresize="alteraImagemSlide()">
+
+	<header>
+		<!--Inicio Cabeçalho-->
+		<nav class="navbar navbar-expand-md navbar-light fixed-top navbar-transparent">
+			<!--Inicio Navegação-->
+			<div class="container-fluid">
+				<!--Container-->
+
+				<!--Botão collapse-->
+				<button class="navbar-toggler">
+				</button>
+
+				<!--Navegação Principal-->
+				<div class="navbar-collapse collapse w-100 order-0 dual-collapse2 mr-5" id="nav-principal">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a href="produtos.html" class="nav-link">Produtos</a>
+						</li>
+						<li class="nav-item ">
+							<a href="blog.html" class="nav-link">Blog</a>
+						</li>
+						<li class="nav-item">
+							<a href="contato.html" class="nav-link" id="contato">Contato</a>
+						</li>
+					</ul>
+				</div>
+				<!--Fim Navegação Principal-->
+
+				<!--Logo-->
+				<div id="logo" class=" order-1 ml-5">
+					<a href="index.html" class="navbar-brand">
+						<img src="imagens/logo1.png" width="90" height="80">
+					</a>
+				</div>
+				<!--Fim Logo-->
+
+				<!--Navegação direita (coração)(estava enfrentando um problema de responsividade pois uma nav com 3 partes sendo que a terceira não colapssa, não é muito amigavel ao bootstrap, então decidi usar um nav-item que colapssa e manter a responsividade oferecida pelo bootstrap)-->
+				<div class="navbar-collapse collapse w-100 order-2 dual-collapse2" id="coração">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a href="#" class="nav-link">
+								<i class="fas fa-heart fa-lg mr-2"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!--FIM Navegação direita (coração)-->
+
+				<!--Navegação direita (pesquisar, carrinho)(para evitar a quebra de layout quando o tamanho caia para SM eu decidi utiliar uma lista pra agrupar o pesquisar e o carrinho)-->
+				<div id="nav2" class="order-3">
+					<ul>
+						<li class="mr-2">
+							<a href="">
+								<i class="fas fa-search "></i>
+							</a>
+						</li>
+						<li class="mr-2">
+							<a href="">
+								<i class="fas fa-shopping-cart"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!--Fim Navegação direita (pesquisar, carrinho)-->
+
+			</div>
+			<!--Fim Container-->
+		</nav>
+		<!--Fim Navegação-->
+	</header>
+	<!--Fim Cabeçalho-->
+
+	<section id="home">
+		<!--Inicio Home-->
+		<div id="carrosel" class="carousel slide" data-ride="carousel">
+			<!--Inicio Carousel-->
+
+			<ol class="carousel-indicators">
+				<!--Indicadores -->
+				<li data-target="carrosel" data-slide-to="0" class="active"></li>
+				<li data-target="carrosel" data-slide-to="1"></li>
+			</ol>
+			<!--Fim Indicadores -->
+
+			<div class="carousel-inner">
+				<!--Inner-->
+
+				<div class="carousel-item active">
+					<!--Item1-->
+					<img id="redimensiona1" src="imagens/imgteste1.1.jpg" class="img-fluid d-block full">
+				</div>
+				<!--Fim Item1-->
+
+				<div class="carousel-item">
+					<!--Item1-->
+					<img id="redimensiona2" src="imagens/imgteste1.1.jpg" class="img-fluid d-block full">
+				</div>
+
+			</div>
+			<!--Fim Inner-->
+
+			<a class="carousel-control-prev" href="#carrosel" role="button" data-slide="prev">
+				<!--Controle voltar-->
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Anterior</span>
+			</a>
+			<!--Fim Controle voltar-->
+
+			<a class="carousel-control-next" href="#carrosel" role="button" data-slide="next">
+				<!--Controle Proximo-->
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Próximo</span>
+			</a>
+			<!--Fim Controle Proximo-->
+
+		</div>
+		<!--Fim Carousel-->
+	</section>
+	<!--Fim Home-->
+
+	<section id="lancamentos" class="caixa">
+		<!--Inicio lançamentos-->
+		<div class="container-fluid mt-3 mb-2">
+			<!--Inicio containear-->
+
+			<h4 class="titulo">Lançamentos</h4>
+			<div class="row">
+				<!--Row-->
+
+				<div class="col-md-3 col-6">
+					<!--Item1-->
+					<a href="">
+						<img src="imagens/calca_whide_leg.jpeg" class="img-fluid item-img" width="100%">
+						<p>Calça Whide Leg</p>
+						<span>R$ 120,00</span>
+					</a>
+				</div>
+				<!--Fim Item1-->
+
+				<div class="col-md-3 col-6">
+					<!--Item2-->
+					<a href="">
+						<img src="imagens/calca_mon_fenda1.jpeg" class="img-fluid item-img" width="100%">
+						<p>Calça Mon Fenda</p>
+						<span>R$ 110,00</span>
+					</a>
+				</div>
+				<!--Fim Item2-->
+
+				<div class="col-md-3 col-6">
+					<!--Item3-->
+					<a href="">
+						<img src="imagens/calca_mon_destroyd1.jpeg" class="img-fluid item-img" width="100%">
+						<p>Jaqueta Jeans com Ziper</p>
+						<span>R$ 120,00</span>
+					</a>
+				</div>
+				<!--Fim Item3-->
+
+				<div class="col-md-3 col-6">
+					<!--Item4-->
+					<a href="">
+						<img src="imagens/short_fenda_lateral1.jpeg" class="img-fluid item-img" width="100%">
+						<p>Short Fenda Lateral</p>
+						<span>R$ 109,00</span>
+					</a>
+				</div>
+				<!--Fim Item4-->
+
+
+
+			</div>
+			<!--Fim Row-->
+		</div>
+		<!--Fim container-->
+	</section>
+	<!--Fim lançamentos-->
+
+	<section id="favoritos" class="caixa">
+		<!--Inicio favoritos-->
+		<div class="container-fluid">
+			<!--Inicio containear-->
+
+			<h4 class="titulo">Queridinhos</h4>
+			<div class="row justify-content-between">
+				<!--Row-->
+
+				<div class="col-md-4">
+					<!--Item3-->
+					<a href="">
+						<img src="imagens/short_destroyd1.jpeg" class="img-fluid item-img">
+						<p>Short Mon Destroyd</p>
+						<span>R$ 99,90</span>
+					</a>
+				</div>
+				<!--Fim Item3-->
+
+				<div class="col-md-4 mt-1 ml-5" style="max-width: 300px;">
+					<!--Item3-->
+					<a href="">
+						<img src="imagens/short_tricolor.jpeg" class="img-fluid item-img">
+						<p>Short Tricolor Leticia</p>
+						<span>R$ 99,90</span>
+					</a>
+				</div>
+				<!--Fim Item3-->
+
+				<div class="col-md-4">
+					<!--Item3-->
+					<a href="">
+						<img src="imagens/calca_mon_destroyd1.jpeg" class="img-fluid item-img">
+						<p>Calça Mon Destroyd</p>
+						<span>R$ 110,00</span>
+					</a>
+				</div>
+				<!--Fim Item3-->
+
+			</div>
+			<!--Fim Row-->
+		</div>
+		<!--Fim container-->
+	</section>
+	<!--Fim favoritos-->
+
+	<section id="divisor">
+		<img src="imagens/imgteste3.jpg" class="img-fluid">
+	</section>
+
+	<section id="promocoes" class="caixa">
+		<!--Inicio favoritos-->
+		<div class="container-fluid">
+			<!--Inicio containear-->
+
+			<h4 class="titulo ml-5">Promoções</h4>
+			<div class="row justify-content-around">
+				<!--Row-->
+
+				<div class="col-md-5">
+					<!--Item3-->
+					<a href="">
+						<img src="imagens/cropped_bufante2.jpeg" class="img-fluid item-img">
+						<p>Cropped Manga Bufante</p>
+						<span>R$ 79,90</span>
+					</a>
+				</div>
+				<!--Fim Item3-->
+
+				<div class="col-md-5">
+					<!--Item3-->
+					<a href="">
+						<img src="imagens/short_fenda_lateral1.jpeg" class="img-fluid item-img">
+						<p>Calça Jeans Skiny</p>
+						<span>R$ 159,99</span>
+					</a>
+				</div>
+				<!--Fim Item3-->
+			</div>
+			<!--Fim Row-->
+		</div>
+		<!--Fim container-->
+	</section>
+	<!--Fim promoções-->
+
+	<section id="postagens">
+		<!--Inicio favoritos-->
+		<h1 class="titulo-posts">Conheça nosso blog</h1>
+		<span class="ml-5">-Ultimos Posts</span>
+		<div class="container-fluid">
+			<!--Inicio containear-->
+			<div class="row justify-content-around">
+				<!--Row-->
+				<div class="col-12 col-md-3 item">
+					<h5>Verão 2021</h5>
+					<hr>
+					<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+						labore et dolore magna aliqua. Ut enim ad minim veniam."</p>
+					<button class="btn btn-block btn-info">Leia Mais</button>
+				</div>
+				<div class="col-12 col-md-3 item">
+					<h5>Exposição em Milão</h5>
+					<hr>
+					<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+						labore et dolore magna aliqua. Ut enim ad minim veniam."</p>
+					<button class="btn btn-block btn-info">Leia Mais</button>
+				</div>
+				<div class="col-12 col-md-3 item">
+					<h5>Apostas para 2022</h5>
+					<hr>
+					<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+						labore et dolore magna aliqua. Ut enim ad minim veniam."</p>
+					<button class="btn btn-block btn-info">Leia Mais</button>
+				</div>
+			</div>
+			<!--Fim Row-->
+		</div>
+		<!--Fim container-->
+	</section>
+	<!--Fim postagens-->
+
+	<footer>
+		<!--Inicio Rodapé-->
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-2">
+					<!--Logo-->
+					<a href="#" class="navbar-brand">
+						<!--lOGO-->
+						<img src="imagens/logo1.png" width="100">
+					</a>
+				</div>
+				<!--Fim Logo-->
+				<div class="col-md-2">
+					<!--Inicio Company-->
+					<h4>Empresa</h4>
+					<ul class="list-group">
+						<li>
+							<a href="">Sobre nós</a>
+						</li>
+						<li>
+							<a href="">Colaboradores</a>
+						</li>
+						<li>
+							<a href="">Vagas</a>
+						</li>
+					</ul>
+				</div>
+				<!--Fim Company-->
+				<div class="col-md-2">
+					<!--Inicio Comunidades-->
+					<h4>Comunidades</h4>
+					<ul class="list-group">
+						<li>
+							<a href="">Artistas</a>
+						</li>
+						<li>
+							<a href="">Desenvolvedores</a>
+						</li>
+						<li>
+							<a href="">Marcas</a>
+						</li>
+					</ul>
+				</div>
+				<!--Fim Comunidades-->
+				<div class="col-md-2">
+					<!--Inicio Links Uteis-->
+					<h4>Links Uteis</h4>
+					<ul class="list-group">
+						<li>
+							<a href="">Ajuda</a>
+						</li>
+						<li>
+							<a href="">Suporte</a>
+						</li>
+					</ul>
+				</div>
+				<!--Fim Links Uteis-->
+				<div class="col-md-4" id="imagens">
+					<!--Inicio Redes-->
+					<ul>
+						<li>
+							<a href="https://pt-br.facebook.com/"><img src="imagens/facebook.png"></a>
+						</li>
+						<li>
+							<a href="https://twitter.com/home"><img src="imagens/twitter.png"></a>
+						</li>
+						<li>
+							<a href="https://www.instagram.com/tsis_jeans/?hl=pt-br"><img
+									src="imagens/instagram.png"></a>
+						</li>
+					</ul>
+				</div>
+				<!--Fim Redes-->
+			</div>
+			<div class="row">
+				<div class="col-6 offset-6" style="text-align: right;">
+					<span> &copy; 2021 Tsis Jeans</span><br>
+					<span>Desenvolvido por Elias Silva</span>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--Fim Rodapé-->
+
+	<!-- JavaScript-->
+	<script src="script/java_script.js"></script>
+	<!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+		integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
