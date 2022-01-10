@@ -4,6 +4,8 @@ Esse foi o meu primeiro projeto com complexo trabalhando com bootstrap, ele é m
 
 O intuito do projeto foi desenvolver a home de uma loja virtual com a maior parte da sua responsividade sendo construida com bootstrap.
 
+Por falta de habilidades com edição de fotos e como o projeto é apenas um objeto de estudos as duas imagens do slide são as mesmas 
+
 ### Tecnologias utilizadas:
 - HTML
 - CSS
